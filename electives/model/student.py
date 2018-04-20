@@ -7,6 +7,9 @@ class Student:
         self._level = level
         self.electives = []
 
+    def __str__(self):
+        return "Student Number: {0}  Name: {1}  Level: {2}".format(self.student_number, self.name, self.level)
+
     @property
     def student_number(self):
         return self._student_number
