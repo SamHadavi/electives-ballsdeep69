@@ -30,3 +30,10 @@ class Student:
     @level.setter
     def level(self, level):
         self._level = level
+
+    def add_elective(self, crn):
+        #check if right level
+        self.electives.append(crn)
+
+    def remove_elective(self, crn):
+        self.electives.remove(crn)
